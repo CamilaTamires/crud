@@ -1,0 +1,45 @@
+.button{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: rgb(145, 119, 218);
+    color: blanchedalmond;
+    font-size: 1rem;
+    cursor:pointer;
+    /* mozzila */
+    transition: box-shadow .6s;
+}
+.button.blue{
+    background-color: rgb(7, 3, 247);
+
+}
+.button.green{
+    background-color: rgb(149, 241, 11);
+}
+
+.button.red{
+    background-color: rgb(255, 0, 0);
+}
+.button:hover{
+    box-shadow:  inset 200px 0 0 #747373;
+}
+
+/* responsividade */
+@media(max-width:480px){
+    .button.mobile{
+        color: transparent;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+    .button.button.mobile::before{
+        color: aquamarine;
+        width: 100%;
+        height: 100%;
+    }
+
+}

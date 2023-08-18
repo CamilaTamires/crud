@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,12 +13,12 @@
 
 <body>
 
-    <head>
-        <h1 class="header-title">Cadastri de Cliente</h1>
-    </head>
+    <header>
+        <h1 class="header-title">Cadastro de Cliente</h1>
+    </header>
 
     <main>
-        <button class="" type="button" id="cadastrarCliente">Cadastrar Cliente</button>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
         <table id="tableCliente" class="gravar">
             <thead>
                 <tr>
@@ -27,22 +27,23 @@
                     <th>Celular</th>
                     <th>Cidade</th>
                     <th>Ação</th>
-                </tr>
+                </tr>o
             </thead>
             <tbody>
 
             </tbody>
         </table>
         <div class="modal" id="modal">
-            <div class="modal-content">
-                <head class="modal-header">
+            <div  class="modal-content">
+                <header class="modal-header">
                     <h2>Novo Cliente</h2>
-                </head>
-                <form action="" id="form" class="modal-form">
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
                     <input type="text" id="nome" class="modal-field" placeholder="nome do cliente" required>
                     <input type="email" id="email" class="modal-field" placeholder=" email Cliente" required>
-                    <input type="number" id="celular" class="modal-field" placeholder="Celular Cliente" required>
                     <input type="text" id="cidade" class="modal-field" placeholder="Cidade Cliente" required>
+                    <input type="tel" id="celular" class="modal-field" placeholder="Celular Cliente" required>
                     </form>
                     <footer class="modal-footer">
                         <button id="salvar" class="button green">Salvar</button>
